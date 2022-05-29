@@ -29,7 +29,7 @@ function submit()
     }
     function searching()
     {
-        var s=document.getElementById(s1).value;
+        var s=document.getElementById("s1").value;
         var found=0;
 
         listaConvidadosArray.forEach(element => {
