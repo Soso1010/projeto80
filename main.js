@@ -1,5 +1,5 @@
 var listaConvidadosArray=[];
-function submit()
+function submit() //para enviar os nomes para as litas
     {
         var displayConvidadoArray=[];
         var nomeConvidado=document.getElementById("nomeConvidado").value;
@@ -11,7 +11,7 @@ function submit()
         document.getElementById("displayNameWithoutCommas").innerHTML=removeCommas;
         document.getElementById("sortButton").style.display="inline-block";
     }
-    function sorting()
+    function sorting()//Mostra e organiza em ordem alfabetica os nomes da lista
     {
         listaConvidadosArray.sort();
         var displayConvidadoArraySorting=[];
@@ -27,7 +27,7 @@ function submit()
 
         document.getElementById("displayNameWithoutCommasSorting").innerHTML=removeCommas;
     }
-    function searching()
+    function searching()//Procura os nomes na lista
     {
         var s=document.getElementById("s1").value;
         var found=0;
